@@ -24,7 +24,7 @@ jogo2 = np.array(['02', '04', '05', '05', '10', '11', '13', '14', '15', '16', '1
 
 bolas = ['Bola1', 'Bola2', 'Bola3', 'Bola4', 'Bola5', 'Bola6', 'Bola7', 'Bola8', 'Bola9', 'Bola10', 'Bola11', 'Bola12', 'Bola13', 'Bola14', 'Bola15']
 
-sorteio = df_loto[['Concurso', bolas]]
+sorteio = df_loto[bolas]
 
 numbers = np.array(sorteio.iloc[-1].values)
 count1 = 0
