@@ -36,20 +36,24 @@ def create_df():
 def select_cols(df, cols = bolas):
     return df[cols]
 
+def count_numbers(df, jogo):
+    count = 0
+    numbers = np.array(df.iloc[-1].values)
+    for num in numbers:
+        if num in jogo:
+            count += 1
+
+    return count
+
+
 extract_page(url)
 df = create_df()
 sorteio = select_cols(df, bolas)
 
 concurso = sorteio.index[-1]
-print(concurso)
-numbers = np.array(sorteio.iloc[-1].values)
-count1 = 0
-count2 = 0
+data = df['Data Sorteio'][-1]
+print(concurso, data)
 
-for num in numbers:
-    if num in jogo1:
-        count1 += 1
-    if num in jogo2:
-        count2 += 1
-
+count1 = count_numbers(sorteio, jogo1)
+count2 = count_numbers(sorteio, jogo2)
 print(count1, count2)
