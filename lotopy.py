@@ -9,7 +9,7 @@ url = 'http://www1.caixa.gov.br/loterias/_arquivos/loterias/D_lotfac.zip'
 
 # My lucky numbers :)
 jogo1 = np.array(['01', '03', '04', '06', '09', '10', '11', '12', '14', '17', '18', '20', '21', '23', '25'])
-jogo2 = np.array(['02', '04', '05', '05', '10', '11', '13', '14', '15', '16', '19', '21', '22', '23', '24'])
+jogo2 = np.array(['02', '04', '05', '08', '10', '11', '13', '14', '15', '16', '19', '21', '22', '23', '24'])
 
 # Columns name with withdrawn numbers
 bolas = ['Bola1', 'Bola2', 'Bola3', 'Bola4', 'Bola5', 'Bola6', 'Bola7', 'Bola8', 'Bola9', 'Bola10', 'Bola11', 'Bola12', 'Bola13', 'Bola14', 'Bola15']
